@@ -1,0 +1,24 @@
+{
+  "name": "dj-loop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Autonomous idea-to-product pipeline",
+  "scripts": {
+    "dev": "pnpm --filter dashboard dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "db:migrate": "supabase db push",
+    "db:seed": "tsx scripts/seed.ts",
+    "db:reset": "supabase db reset"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0",
+    "tsx": "^4.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.0"
+}

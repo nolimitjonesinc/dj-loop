@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh repo list:*)",
+      "Bash(gh api:*)",
+      "Bash(curl:*)",
+      "Bash(python3 -m json.tool:*)",
+      "Bash(SUPABASE_URL=\"https://eoiyyegxwehmpivpfodi.supabase.co\")",
+      "Bash(SUPABASE_KEY=\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVvaXl5ZWd4d2VobXBpdnBmb2RpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc5OTE2OTEsImV4cCI6MjA4MzU2NzY5MX0.GbwNjI31HNiGnFzP14Z7HxvDuraGRSpXu5Ty7Xf4h-g\":*)",
+      "Bash(for i in 1 2 3 4 5)",
+      "Bash(do)",
+      "Bash(echo:*)",
+      "Bash(done)",
+      "Bash(gh repo view:*)",
+      "Bash(npx tsc:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

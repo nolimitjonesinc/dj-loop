@@ -1,0 +1,1297 @@
+{
+  "id": "chr_1737158400_kv7x3m",
+  "world_id": null,
+  "name": "Kira Voss",
+  "age": 32,
+  "gender": "female",
+  "neighborhood": "The Substrate",
+  "faction": "The Unwritten",
+  "social_class": "lower",
+  "profession": "Information Broker",
+  "narrative_role": "Wildcard",
+  "psychology": {
+    "world_context": {
+      "era": "Far Future",
+      "region": "Major Metropolis",
+      "setting": "vertical_megacity_substrate",
+      "historical_events_lived_through": [
+        "The Oxygen Riots of 2175",
+        "The Breath's first unexplained decision (2180)",
+        "The Midline Purge of 2183"
+      ],
+      "technology_impact": "Augmentation divides humanity; information is the only currency that matters in the dark"
+    },
+    "cultural_identity": {
+      "ethnicity": "Mixed - Substrate-born",
+      "subgroup": "Third-generation Substrate",
+      "belonging": "outsider",
+      "identity_relationship": "proud_private",
+      "cultural_values": {
+        "collectivism_individualism": 0.75,
+        "family_obligation": 0.3,
+        "respect_for_elders": 0.2,
+        "gender_role_rigidity": 0.1,
+        "religious_centrality": 0,
+        "honor_culture": 0.6,
+        "education_priority": 0.8,
+        "emotional_expression": 0.2
+      }
+    },
+    "generational_echoes": {
+      "family_myth": [
+        "We are survivors",
+        "Trust no one outside blood",
+        "Information is power"
+      ],
+      "unmourned_loss": "parent_who_left",
+      "invisible_loyalty": "must_break_family_pattern",
+      "family_secret": "true_parentage_different",
+      "grandparent_experience": "Grandmother was an Apex engineer who was exiled to Substrate after exposing Helix safety violations in 2145. The family never recovered their status."
+    },
+    "family": {
+      "structure": "single_parent",
+      "birth_order": "eldest",
+      "socioeconomic": "working_poor",
+      "mother": {
+        "wound": "parentification",
+        "wound_type": "parentified_caretaker_ill_parent",
+        "coping": "emotional_unavailability",
+        "present": true
+      },
+      "father": {
+        "wound": "abandonment",
+        "wound_type": "parent_emotionally_absent_while_present",
+        "coping": "leaves_before_being_left",
+        "present": false
+      },
+      "siblings": 1
+    },
+    "atmospheric_conditions": {
+      "emotional_climate": "tense_walking_eggshells",
+      "unspoken_rules": [
+        "dont_ask_about_father",
+        "be_useful_or_be_invisible",
+        "never_trust_outsiders",
+        "information_is_survival"
+      ],
+      "survival_requirement": [
+        "read_moods_constantly",
+        "be_useful",
+        "stay_alert_always"
+      ]
+    },
+    "biology": {
+      "temperament": "highly_sensitive",
+      "temperament_dimensions": {
+        "sensitivity": 0.85,
+        "baseline_energy": 0.6,
+        "novelty_seeking": 0.7,
+        "adaptability": 0.8,
+        "persistence": 0.9,
+        "initial_mood": 0.35,
+        "intensity": 0.5,
+        "approach_withdrawal": 0.55
+      },
+      "shadow_traits": {
+        "callousness": 0.45,
+        "dominance_drive": 0.55,
+        "paranoia_tendency": 0.75,
+        "manipulation_tendency": 0.7,
+        "vengefulness": 0.6,
+        "entitlement": 0.25,
+        "grandiosity": 0.3
+      },
+      "birth_circumstance": "unwanted_pregnancy",
+      "appearance_trajectory": "plain_becomes_attractive"
+    },
+    "embodiment": {
+      "body_relationship": "instrumental_tool",
+      "body_violations": [
+        "hit_beaten_childhood"
+      ],
+      "movement_quality": "predator_economy",
+      "somatic_patterns": {
+        "stress_locations": [
+          "stomach",
+          "shoulders",
+          "jaw"
+        ],
+        "triggers": [
+          "yelling_freeze",
+          "being_watched_paranoia",
+          "cornered_rage"
+        ]
+      }
+    },
+    "attachment": {
+      "style": "avoidant",
+      "subtype": "avoidant_fearful",
+      "core_beliefs_self": [
+        "I can only rely on myself",
+        "I am dangerous to those I love",
+        "I am worthy only of what I earn"
+      ],
+      "core_beliefs_others": [
+        "Others want to use me",
+        "Trust will be betrayed",
+        "Everyone has an angle"
+      ],
+      "core_beliefs_world": [
+        "The game is rigged",
+        "Nowhere is truly safe",
+        "Information is the only power"
+      ],
+      "defense_mechanisms": [
+        "intellectualization",
+        "compartmentalization",
+        "anticipation"
+      ],
+      "coping_style": "flight",
+      "coping_specifics": [
+        "avoidance",
+        "isolation",
+        "ghosting"
+      ],
+      "shadow_triggers": [
+        "when_trust_broken",
+        "when_cornered",
+        "when_being_controlled",
+        "when_lied_to"
+      ]
+    },
+    "big_five": {
+      "openness": 0.75,
+      "conscientiousness": 0.7,
+      "extraversion": 0.4,
+      "agreeableness": 0.35,
+      "neuroticism": 0.6
+    },
+    "protective_factors": [
+      "high_intelligence",
+      "mentor_figure",
+      "discovered_talent",
+      "books_library",
+      "sense_of_humor"
+    ],
+    "repetition_compulsions": [
+      "abandons_before_abandoned",
+      "chooses_unavailable_partners",
+      "sabotages_good_relationships"
+    ],
+    "life_events": [
+      {
+        "age": 0,
+        "domain": "family",
+        "type": "birth_unwanted",
+        "valence": "negative",
+        "severity": 0.6
+      },
+      {
+        "age": 0.3,
+        "domain": "family",
+        "type": "mother_distant",
+        "valence": "negative",
+        "severity": 0.4
+      },
+      {
+        "age": 0.8,
+        "domain": "family",
+        "type": "grandmother_care",
+        "valence": "positive",
+        "severity": 0.5
+      },
+      {
+        "age": 1.2,
+        "domain": "family",
+        "type": "father_absent",
+        "valence": "negative",
+        "severity": 0.5
+      },
+      {
+        "age": 1.5,
+        "domain": "body",
+        "type": "illness_minor",
+        "valence": "negative",
+        "severity": 0.3
+      },
+      {
+        "age": 1.8,
+        "domain": "body",
+        "type": "first_steps",
+        "valence": "positive",
+        "severity": 0.3
+      },
+      {
+        "age": 2,
+        "domain": "family",
+        "type": "mother_works_double",
+        "valence": "negative",
+        "severity": 0.4
+      },
+      {
+        "age": 2.3,
+        "domain": "family",
+        "type": "grandmother_stories",
+        "valence": "positive",
+        "severity": 0.6
+      },
+      {
+        "age": 2.5,
+        "domain": "family",
+        "type": "mother_crying_alone",
+        "valence": "negative",
+        "severity": 0.5
+      },
+      {
+        "age": 2.7,
+        "domain": "family",
+        "type": "sibling_born",
+        "valence": "negative",
+        "severity": 0.4
+      },
+      {
+        "age": 3,
+        "domain": "family",
+        "type": "parentification_begins",
+        "valence": "negative",
+        "severity": 0.5
+      },
+      {
+        "age": 3.2,
+        "domain": "family",
+        "type": "father_visits_once",
+        "valence": "negative",
+        "severity": 0.6
+      },
+      {
+        "age": 3.3,
+        "domain": "world",
+        "type": "first_death_witnessed",
+        "valence": "traumatic",
+        "severity": 0.7
+      },
+      {
+        "age": 3.5,
+        "domain": "world",
+        "type": "substrate_blackout",
+        "valence": "negative",
+        "severity": 0.5
+      },
+      {
+        "age": 3.7,
+        "domain": "peer",
+        "type": "first_lie_told",
+        "valence": "negative",
+        "severity": 0.4
+      },
+      {
+        "age": 3.8,
+        "domain": "family",
+        "type": "grandmother_teaching",
+        "valence": "positive",
+        "severity": 0.7
+      },
+      {
+        "age": 4,
+        "domain": "peer",
+        "type": "first_friend",
+        "valence": "positive",
+        "severity": 0.5
+      },
+      {
+        "age": 4.1,
+        "domain": "family",
+        "type": "overheard_fight",
+        "valence": "negative",
+        "severity": 0.5
+      },
+      {
+        "age": 4.2,
+        "domain": "family",
+        "type": "mother_exhaustion_snap",
+        "valence": "negative",
+        "severity": 0.6
+      },
+      {
+        "age": 4.3,
+        "domain": "peer",
+        "type": "shared_food_with_friend",
+        "valence": "positive",
+        "severity": 0.4
+      },
+      {
+        "age": 4.5,
+        "domain": "family",
+        "type": "caring_for_sibling",
+        "valence": "negative",
+        "severity": 0.4
+      },
+      {
+        "age": 4.7,
+        "domain": "world",
+        "type": "saw_someone_helped",
+        "valence": "positive",
+        "severity": 0.4
+      },
+      {
+        "age": 4.8,
+        "domain": "world",
+        "type": "oxygen_rationing_begins",
+        "valence": "negative",
+        "severity": 0.5
+      },
+      {
+        "age": 5,
+        "domain": "family",
+        "type": "grandmother_dies",
+        "valence": "traumatic",
+        "severity": 0.9
+      },
+      {
+        "age": 5.2,
+        "domain": "family",
+        "type": "mother_grief_collapse",
+        "valence": "negative",
+        "severity": 0.7
+      },
+      {
+        "age": 5.4,
+        "domain": "family",
+        "type": "found_grandmother_journals",
+        "valence": "positive",
+        "severity": 0.6
+      },
+      {
+        "age": 5.5,
+        "domain": "family",
+        "type": "grandmother_last_words",
+        "valence": "positive",
+        "severity": 0.8
+      },
+      {
+        "age": 5.6,
+        "domain": "peer",
+        "type": "friend_moves_away",
+        "valence": "negative",
+        "severity": 0.5
+      },
+      {
+        "age": 5.8,
+        "domain": "body",
+        "type": "malnourishment_period",
+        "valence": "negative",
+        "severity": 0.6
+      },
+      {
+        "age": 5.9,
+        "domain": "world",
+        "type": "helix_poster_seen",
+        "valence": "negative",
+        "severity": 0.3
+      },
+      {
+        "age": 6,
+        "domain": "family",
+        "type": "mother_hits_once",
+        "valence": "traumatic",
+        "severity": 0.75
+      },
+      {
+        "age": 6.1,
+        "domain": "world",
+        "type": "substrate_festival",
+        "valence": "positive",
+        "severity": 0.5
+      },
+      {
+        "age": 6.2,
+        "domain": "world",
+        "type": "learns_to_read",
+        "valence": "positive",
+        "severity": 0.7
+      },
+      {
+        "age": 6.4,
+        "domain": "peer",
+        "type": "bullied_for_clothes",
+        "valence": "negative",
+        "severity": 0.5
+      },
+      {
+        "age": 6.5,
+        "domain": "peer",
+        "type": "excluded_from_game",
+        "valence": "negative",
+        "severity": 0.4
+      },
+      {
+        "age": 6.6,
+        "domain": "family",
+        "type": "mother_apologizes",
+        "valence": "positive",
+        "severity": 0.4
+      },
+      {
+        "age": 6.7,
+        "domain": "family",
+        "type": "sibling_laughing",
+        "valence": "positive",
+        "severity": 0.5
+      },
+      {
+        "age": 6.8,
+        "domain": "world",
+        "type": "first_helix_encounter",
+        "valence": "negative",
+        "severity": 0.5
+      },
+      {
+        "age": 7,
+        "domain": "family",
+        "type": "learns_family_secret",
+        "valence": "traumatic",
+        "severity": 0.8
+      },
+      {
+        "age": 7.2,
+        "domain": "peer",
+        "type": "makes_new_friend",
+        "valence": "positive",
+        "severity": 0.5
+      },
+      {
+        "age": 7.3,
+        "domain": "body",
+        "type": "learned_to_hide",
+        "valence": "positive",
+        "severity": 0.5
+      },
+      {
+        "age": 7.4,
+        "domain": "world",
+        "type": "teacher_cruelty",
+        "valence": "negative",
+        "severity": 0.5
+      },
+      {
+        "age": 7.6,
+        "domain": "family",
+        "type": "sibling_sick",
+        "valence": "negative",
+        "severity": 0.6
+      },
+      {
+        "age": 7.8,
+        "domain": "body",
+        "type": "growth_spurt",
+        "valence": "positive",
+        "severity": 0.3
+      },
+      {
+        "age": 7.9,
+        "domain": "family",
+        "type": "mother_promise_broken",
+        "valence": "negative",
+        "severity": 0.5
+      },
+      {
+        "age": 8,
+        "domain": "peer",
+        "type": "betrayed_by_friend",
+        "valence": "traumatic",
+        "severity": 0.75
+      },
+      {
+        "age": 8.1,
+        "domain": "peer",
+        "type": "defended_by_stranger",
+        "valence": "positive",
+        "severity": 0.6
+      },
+      {
+        "age": 8.2,
+        "domain": "world",
+        "type": "mentor_appears",
+        "valence": "positive",
+        "severity": 0.8
+      },
+      {
+        "age": 8.4,
+        "domain": "family",
+        "type": "mother_starts_drinking",
+        "valence": "negative",
+        "severity": 0.6
+      },
+      {
+        "age": 8.6,
+        "domain": "world",
+        "type": "learns_information_trading",
+        "valence": "positive",
+        "severity": 0.7
+      },
+      {
+        "age": 8.7,
+        "domain": "body",
+        "type": "learned_to_run",
+        "valence": "positive",
+        "severity": 0.5
+      },
+      {
+        "age": 8.8,
+        "domain": "peer",
+        "type": "exclusion_from_group",
+        "valence": "negative",
+        "severity": 0.5
+      },
+      {
+        "age": 8.9,
+        "domain": "world",
+        "type": "teacher_kindness",
+        "valence": "positive",
+        "severity": 0.5
+      },
+      {
+        "age": 9,
+        "domain": "family",
+        "type": "father_sends_message",
+        "valence": "negative",
+        "severity": 0.6
+      },
+      {
+        "age": 9.2,
+        "domain": "world",
+        "type": "oxygen_riot_witnessed",
+        "valence": "traumatic",
+        "severity": 0.85
+      },
+      {
+        "age": 9.3,
+        "domain": "family",
+        "type": "sibling_dependency",
+        "valence": "negative",
+        "severity": 0.5
+      },
+      {
+        "age": 9.4,
+        "domain": "body",
+        "type": "discovered_speed",
+        "valence": "positive",
+        "severity": 0.5
+      },
+      {
+        "age": 9.6,
+        "domain": "peer",
+        "type": "helped_younger_kid",
+        "valence": "positive",
+        "severity": 0.4
+      },
+      {
+        "age": 9.8,
+        "domain": "family",
+        "type": "mother_sober_month",
+        "valence": "positive",
+        "severity": 0.5
+      },
+      {
+        "age": 9.9,
+        "domain": "body",
+        "type": "hunger_week",
+        "valence": "negative",
+        "severity": 0.6
+      },
+      {
+        "age": 10,
+        "domain": "world",
+        "type": "first_successful_trade",
+        "valence": "positive",
+        "severity": 0.7
+      },
+      {
+        "age": 10.1,
+        "domain": "world",
+        "type": "first_payment_received",
+        "valence": "positive",
+        "severity": 0.6
+      },
+      {
+        "age": 10.2,
+        "domain": "family",
+        "type": "mother_relapses",
+        "valence": "negative",
+        "severity": 0.6
+      },
+      {
+        "age": 10.4,
+        "domain": "peer",
+        "type": "first_crush",
+        "valence": "positive",
+        "severity": 0.4
+      },
+      {
+        "age": 10.6,
+        "domain": "world",
+        "type": "mentor_teaches_networks",
+        "valence": "positive",
+        "severity": 0.7
+      },
+      {
+        "age": 10.7,
+        "domain": "peer",
+        "type": "prank_gone_wrong",
+        "valence": "negative",
+        "severity": 0.4
+      },
+      {
+        "age": 10.8,
+        "domain": "body",
+        "type": "puberty_begins",
+        "valence": "negative",
+        "severity": 0.4
+      },
+      {
+        "age": 10.9,
+        "domain": "body",
+        "type": "first_period",
+        "valence": "negative",
+        "severity": 0.4
+      },
+      {
+        "age": 11,
+        "domain": "family",
+        "type": "sibling_almost_dies",
+        "valence": "traumatic",
+        "severity": 0.8
+      },
+      {
+        "age": 11.1,
+        "domain": "peer",
+        "type": "code_of_silence_learned",
+        "valence": "positive",
+        "severity": 0.5
+      },
+      {
+        "age": 11.2,
+        "domain": "peer",
+        "type": "romantic_rejection",
+        "valence": "negative",
+        "severity": 0.5
+      },
+      {
+        "age": 11.4,
+        "domain": "world",
+        "type": "unwritten_notice_her",
+        "valence": "positive",
+        "severity": 0.7
+      },
+      {
+        "age": 11.6,
+        "domain": "family",
+        "type": "learns_grandmother_truth",
+        "valence": "negative",
+        "severity": 0.6
+      },
+      {
+        "age": 11.8,
+        "domain": "body",
+        "type": "appearance_mocked",
+        "valence": "negative",
+        "severity": 0.5
+      },
+      {
+        "age": 11.9,
+        "domain": "peer",
+        "type": "secret_kept_successfully",
+        "valence": "positive",
+        "severity": 0.5
+      },
+      {
+        "age": 12,
+        "domain": "peer",
+        "type": "joins_information_crew",
+        "valence": "positive",
+        "severity": 0.7
+      },
+      {
+        "age": 12.1,
+        "domain": "body",
+        "type": "learned_to_read_bodies",
+        "valence": "positive",
+        "severity": 0.6
+      },
+      {
+        "age": 12.2,
+        "domain": "world",
+        "type": "helix_raid_neighborhood",
+        "valence": "traumatic",
+        "severity": 0.75
+      },
+      {
+        "age": 12.4,
+        "domain": "family",
+        "type": "mother_hospitalized",
+        "valence": "negative",
+        "severity": 0.7
+      },
+      {
+        "age": 12.6,
+        "domain": "peer",
+        "type": "crew_member_arrested",
+        "valence": "negative",
+        "severity": 0.6
+      },
+      {
+        "age": 12.7,
+        "domain": "world",
+        "type": "learned_tier_system",
+        "valence": "negative",
+        "severity": 0.5
+      },
+      {
+        "age": 12.8,
+        "domain": "world",
+        "type": "first_midline_contact",
+        "valence": "positive",
+        "severity": 0.6
+      },
+      {
+        "age": 12.9,
+        "domain": "family",
+        "type": "mother_sober_again",
+        "valence": "positive",
+        "severity": 0.4
+      },
+      {
+        "age": 13,
+        "domain": "body",
+        "type": "first_fight_won",
+        "valence": "positive",
+        "severity": 0.6
+      },
+      {
+        "age": 13.1,
+        "domain": "family",
+        "type": "found_fathers_messages",
+        "valence": "negative",
+        "severity": 0.6
+      },
+      {
+        "age": 13.2,
+        "domain": "family",
+        "type": "sibling_blames_her",
+        "valence": "negative",
+        "severity": 0.6
+      },
+      {
+        "age": 13.4,
+        "domain": "peer",
+        "type": "first_real_romance",
+        "valence": "positive",
+        "severity": 0.6
+      },
+      {
+        "age": 13.6,
+        "domain": "world",
+        "type": "mentor_killed",
+        "valence": "traumatic",
+        "severity": 0.9
+      },
+      {
+        "age": 13.8,
+        "domain": "family",
+        "type": "mother_returns_different",
+        "valence": "negative",
+        "severity": 0.5
+      },
+      {
+        "age": 13.9,
+        "domain": "world",
+        "type": "blackmail_witnessed",
+        "valence": "negative",
+        "severity": 0.5
+      },
+      {
+        "age": 14,
+        "domain": "peer",
+        "type": "romance_ends_badly",
+        "valence": "negative",
+        "severity": 0.6
+      },
+      {
+        "age": 14.1,
+        "domain": "world",
+        "type": "understood_city_structure",
+        "valence": "positive",
+        "severity": 0.6
+      },
+      {
+        "age": 14.2,
+        "domain": "world",
+        "type": "promoted_in_unwritten",
+        "valence": "positive",
+        "severity": 0.7
+      },
+      {
+        "age": 14.4,
+        "domain": "body",
+        "type": "appearance_admired",
+        "valence": "positive",
+        "severity": 0.4
+      },
+      {
+        "age": 14.6,
+        "domain": "family",
+        "type": "father_resurfaces",
+        "valence": "traumatic",
+        "severity": 0.7
+      },
+      {
+        "age": 14.7,
+        "domain": "family",
+        "type": "grandmother_journals_decoded",
+        "valence": "positive",
+        "severity": 0.7
+      },
+      {
+        "age": 14.8,
+        "domain": "peer",
+        "type": "deep_friendship_forms",
+        "valence": "positive",
+        "severity": 0.7
+      },
+      {
+        "age": 14.9,
+        "domain": "peer",
+        "type": "helped_friend_escape",
+        "valence": "positive",
+        "severity": 0.6
+      },
+      {
+        "age": 15,
+        "domain": "world",
+        "type": "breath_first_anomaly",
+        "valence": "negative",
+        "severity": 0.6
+      },
+      {
+        "age": 15.1,
+        "domain": "peer",
+        "type": "taught_younger_broker",
+        "valence": "positive",
+        "severity": 0.5
+      },
+      {
+        "age": 15.2,
+        "domain": "family",
+        "type": "father_leaves_again",
+        "valence": "traumatic",
+        "severity": 0.75
+      },
+      {
+        "age": 15.4,
+        "domain": "body",
+        "type": "first_augmentation_offer",
+        "valence": "negative",
+        "severity": 0.4
+      },
+      {
+        "age": 15.6,
+        "domain": "peer",
+        "type": "betrays_someone_first_time",
+        "valence": "negative",
+        "severity": 0.6
+      },
+      {
+        "age": 15.8,
+        "domain": "world",
+        "type": "first_apex_job",
+        "valence": "positive",
+        "severity": 0.7
+      },
+      {
+        "age": 15.9,
+        "domain": "family",
+        "type": "mother_confesses_truth",
+        "valence": "negative",
+        "severity": 0.6
+      },
+      {
+        "age": 16,
+        "domain": "family",
+        "type": "sibling_cuts_contact",
+        "valence": "negative",
+        "severity": 0.7
+      },
+      {
+        "age": 16.1,
+        "domain": "family",
+        "type": "sibling_marriage",
+        "valence": "negative",
+        "severity": 0.4
+      },
+      {
+        "age": 16.2,
+        "domain": "peer",
+        "type": "friend_saves_her_life",
+        "valence": "positive",
+        "severity": 0.8
+      },
+      {
+        "age": 16.4,
+        "domain": "world",
+        "type": "almost_caught_by_helix",
+        "valence": "traumatic",
+        "severity": 0.75
+      },
+      {
+        "age": 16.6,
+        "domain": "body",
+        "type": "injury_scarring",
+        "valence": "negative",
+        "severity": 0.5
+      },
+      {
+        "age": 16.7,
+        "domain": "peer",
+        "type": "alliance_formed",
+        "valence": "positive",
+        "severity": 0.6
+      },
+      {
+        "age": 16.8,
+        "domain": "family",
+        "type": "mother_asks_for_money",
+        "valence": "negative",
+        "severity": 0.5
+      },
+      {
+        "age": 16.9,
+        "domain": "world",
+        "type": "first_apex_contact",
+        "valence": "positive",
+        "severity": 0.7
+      },
+      {
+        "age": 17,
+        "domain": "peer",
+        "type": "leads_crew_first_time",
+        "valence": "positive",
+        "severity": 0.7
+      },
+      {
+        "age": 17.1,
+        "domain": "body",
+        "type": "endurance_tested",
+        "valence": "positive",
+        "severity": 0.6
+      },
+      {
+        "age": 17.2,
+        "domain": "world",
+        "type": "midline_purge_begins",
+        "valence": "traumatic",
+        "severity": 0.85
+      },
+      {
+        "age": 17.4,
+        "domain": "family",
+        "type": "mother_disappears",
+        "valence": "negative",
+        "severity": 0.7
+      },
+      {
+        "age": 17.6,
+        "domain": "peer",
+        "type": "crew_member_betrays",
+        "valence": "traumatic",
+        "severity": 0.8
+      },
+      {
+        "age": 17.8,
+        "domain": "body",
+        "type": "torture_survived",
+        "valence": "traumatic",
+        "severity": 0.9
+      },
+      {
+        "age": 17.9,
+        "domain": "peer",
+        "type": "earned_respect",
+        "valence": "positive",
+        "severity": 0.7
+      },
+      {
+        "age": 18,
+        "domain": "world",
+        "type": "becomes_independent_broker",
+        "valence": "positive",
+        "severity": 0.8
+      }
+    ],
+    "core_memories": [
+      {
+        "age": 5,
+        "type": "grandmother_dies",
+        "what_happened": "Grandmother collapsed in the kitchen while telling her stories about the sun. Kira was holding her hand when she stopped breathing. Mother screamed. The medics came too late. They always come too late in the Substrate.",
+        "attribution": "The only person who truly saw me is gone. I carry her now.",
+        "somatic": "Right hand tingles when thinking of loss. Chest tightens when someone mentions 'the old days.'"
+      },
+      {
+        "age": 6,
+        "type": "mother_hits_once",
+        "what_happened": "Mother came home after a triple shift. Kira asked for help with something - she can't remember what. Mother's hand came fast, once across the face. Then mother crumpled, crying. Neither ever mentioned it again.",
+        "attribution": "Even love has violence in it. Never ask for help when someone is tired.",
+        "somatic": "Flinches when people raise hands suddenly. Jaw clenches when she smells recycled air like home."
+      },
+      {
+        "age": 7,
+        "type": "learns_family_secret",
+        "what_happened": "Found grandmother's hidden journal. Her 'father' was not her father. Her real father was an Apex engineer who grandmother worked with before the exile. He's still up there. He knows she exists.",
+        "attribution": "Everything I was told was a lie. The truth is always hidden. Find it yourself.",
+        "somatic": "Stomach drops when confronted with unexpected information."
+      },
+      {
+        "age": 8,
+        "type": "betrayed_by_friend",
+        "what_happened": "Best friend Tomas sold information about her to a local gang for food credits. They came for her that night. She escaped through the vents but never forgot his face when they made eye contact.",
+        "attribution": "Everyone has a price. Never be the one who gets sold.",
+        "somatic": "Hypervigilance when someone needs something from her. Eyes always check exits."
+      },
+      {
+        "age": 8.2,
+        "type": "mentor_appears",
+        "what_happened": "Old man Sev found her crying in the tunnels after the betrayal. He said nothing, just handed her a water ration and a data chip. 'Information, girl. That's what keeps you breathing.' He saw her. First person since grandmother.",
+        "attribution": "Wisdom comes from unexpected places. Stay visible to the right people.",
+        "somatic": "Warmth in chest when someone offers help without expectation."
+      },
+      {
+        "age": 9.2,
+        "type": "oxygen_riot_witnessed",
+        "what_happened": "Helix cut oxygen by 15% to the Substrate. The riots started three blocks from home. She watched from the ventilation shaft as Enforcers beat a man to death for throwing a bottle. The crowd did nothing. Neither did she.",
+        "attribution": "Power is absolute. Crowds are useless. Survive alone.",
+        "somatic": "Difficulty breathing in crowded spaces. Shoulders tense when seeing uniforms."
+      },
+      {
+        "age": 11,
+        "type": "sibling_almost_dies",
+        "what_happened": "Younger brother Mikhail got lung fever. No credits for medicine. She traded information she'd been saving - dangerous information - to a Midline doctor for treatment. It worked. She realized information was life or death.",
+        "attribution": "Knowledge saves lives. Hoard it. Trade it wisely. Never be poor in information.",
+        "somatic": "Protective rage when family is threatened. Hands shake when someone she cares about is sick."
+      },
+      {
+        "age": 13.6,
+        "type": "mentor_killed",
+        "what_happened": "Sev, the Unwritten broker who taught her everything, was found in a recycling chute. Helix made it look like an accident. She knew better. She had his last data chip. She never stopped running after that.",
+        "attribution": "Attachment is dangerous. Learn everything, then move on before they find you.",
+        "somatic": "Cannot sleep facing walls. Checks every room twice."
+      },
+      {
+        "age": 15.2,
+        "type": "father_leaves_again",
+        "what_happened": "After eight months of 'reconnecting,' her biological father - the Apex man - stopped responding to messages. His assistant sent a formal note: 'Mr. Hale has concluded his charitable outreach.' She was charity.",
+        "attribution": "I was never wanted. I will never need to be wanted. I will be necessary.",
+        "somatic": "Cold rage when people make promises. Throat closes when she feels hope."
+      },
+      {
+        "age": 17.6,
+        "type": "crew_member_betrays",
+        "what_happened": "Jin, her closest partner in the Unwritten, sold her location to Helix Security for relocation to the Midline. She was captured. Three days of interrogation. She gave them nothing. Jin got his new life. She got scars.",
+        "attribution": "The closer someone is, the deeper they can cut. Keep everyone at arm's length.",
+        "somatic": "Scars on wrists burn when she trusts someone. Cannot let people stand behind her."
+      },
+      {
+        "age": 17.8,
+        "type": "torture_survived",
+        "what_happened": "Helix interrogation lasted 72 hours. They wanted her network. She compartmentalized - gave them dead leads, old names, people already gone. Discovered she could disappear inside herself. They let her go when she was 'empty.'",
+        "attribution": "My body is a vessel. Pain is information. I can survive anything.",
+        "somatic": "Dissociates under extreme stress. Physical pain registers as distant data."
+      }
+    ],
+    "elaborations": {
+      "mother_detailed": {
+        "name": "Yara Voss",
+        "wound_story": "Yara was the eldest of five in a Substrate family. When she was twelve, her mother had a breakdown after their father disappeared. Yara raised her siblings, worked the recycling plants, never had a childhood. She thought she'd escaped when she fell for Marcus Hale - an Apex engineer slumming in the Substrate for 'research.' He left when he found out about the pregnancy. She's been surviving ever since.",
+        "how_she_copes": "Works triple shifts to avoid being home. When home, stares at nothing. Drinks synthetic alcohol on bad days. Shows love through providing, never through words or touch. Cannot tolerate neediness - it reminds her of her siblings.",
+        "provides": [
+          "Physical survival",
+          "Work ethic",
+          "Resilience model",
+          "Proof that women survive alone"
+        ],
+        "fails_to_provide": [
+          "Emotional attunement",
+          "Physical affection",
+          "Validation",
+          "The truth about Kira's father"
+        ]
+      },
+      "father_detailed": {
+        "name": "Marcus Hale",
+        "wound_story": "Born to Apex privilege, Marcus was always drawn to the edges. The Substrate was his rebellion against his family's expectations. Meeting Yara was exciting - until it became real. When she got pregnant, he ran back to the safety of his tier. He's spent 32 years trying to forget. But he kept tabs. He knows everything about Kira.",
+        "how_he_copes": "Compartmentalization. Has an Apex wife, Apex children. Checks Kira's file quarterly but never reaches out first. When she found him, he 'reconnected' to assuage guilt, then withdrew when it got complicated. Tells himself it's for her safety.",
+        "provides": [
+          "Proof that escape is possible",
+          "Genetic intelligence",
+          "A target for rage",
+          "The truth about the tiers"
+        ],
+        "fails_to_provide": [
+          "Presence",
+          "Protection",
+          "Acknowledgment",
+          "A way out"
+        ]
+      },
+      "visual_description": "Tall and lean, built for the tight spaces of the Substrate - all angles and efficiency. Dark hair cropped short, easier to maintain, harder to grab. Eyes that shift between brown and amber depending on the light, always watching, always calculating. A thin scar runs from her left temple to jaw, souvenir from her interrogation days. Dresses in layers - dark, practical, forgettable - with hidden pockets everywhere. Moves like smoke through a vent: quiet, purposeful, already thinking about the exit.",
+      "voice_samples": [
+        "(To a nervous client) \"Information doesn't care about your feelings. Neither do I. What do you have?\"",
+        "(To someone she almost trusts) \"You want to know about me? Here's what matters: I remember everything, I owe nothing, and I'm still breathing. That's all you get.\"",
+        "(Under stress, cornered) \"You think this is the first time someone's pointed something at me? You're not even the scariest thing I've seen today. So either pull the trigger or talk terms.\"",
+        "(Rare moment of vulnerability) \"My grandmother used to say the sun reaches everyone eventually. She never made it up. Neither did I. But I'm still waiting.\""
+      ],
+      "story_hooks": [
+        "Her biological father Marcus Hale has just been promoted to Helix's Board of Directors. He's reaching out - but is it guilt, or does he need something only she can provide?",
+        "The information broker who betrayed her, Jin, has resurfaced in the Midline. He claims he was blackmailed and has proof. He also has a data chip that belonged to her mentor Sev.",
+        "The Breath, the AI running life support, has started sending her encrypted messages. It seems to know things about her grandmother's work that no one should know.",
+        "Her brother Mikhail's child is sick with the same lung fever. He's asking for help after years of silence. The medicine exists - but only in the Apex."
+      ]
+    },
+    "extended_systems": {
+      "belief_schemas": [
+        {
+          "belief": "I can only rely on myself",
+          "triggers": [
+            "Someone offering help",
+            "Feeling dependent",
+            "Owing someone",
+            "Unexpected kindness"
+          ],
+          "evidence_library": [
+            "Tomas sold me for food credits",
+            "Jin traded me for a new life",
+            "Father left when things got real",
+            "Mother was never emotionally present",
+            "Sev died and left me alone"
+          ],
+          "protective_behaviors": [
+            "Refusing help until desperate",
+            "Overpaying debts immediately",
+            "Keeping relationships transactional",
+            "Always having an exit plan",
+            "Never sleeping in the same place twice"
+          ]
+        },
+        {
+          "belief": "Trust will be betrayed",
+          "triggers": [
+            "Someone getting close",
+            "Sharing personal information",
+            "Making plans with others",
+            "Feeling safe"
+          ],
+          "evidence_library": [
+            "Every person I've trusted has either left or sold me",
+            "Father's 'charitable outreach' note",
+            "Jin's face as they dragged me away",
+            "Mother's broken promises"
+          ],
+          "protective_behaviors": [
+            "Compartmentalizing relationships",
+            "Testing loyalty before trusting",
+            "Never revealing true feelings",
+            "Keeping multiple identities",
+            "Abandoning relationships before they can betray her"
+          ]
+        },
+        {
+          "belief": "I am only valuable for what I know",
+          "triggers": [
+            "Being asked personal questions",
+            "Someone interested in her as a person",
+            "Compliments about anything except competence",
+            "Moments of connection"
+          ],
+          "evidence_library": [
+            "The Unwritten only valued her skills",
+            "Mother only notices when she's useful",
+            "Father only reconnected when she found him",
+            "Clients only care about her information"
+          ],
+          "protective_behaviors": [
+            "Deflecting personal questions with information trades",
+            "Measuring all relationships by utility",
+            "Constantly acquiring new knowledge",
+            "Hiding vulnerability behind expertise"
+          ]
+        }
+      ],
+      "dialectical_tensions": [
+        {
+          "belief_a": "I am safest alone",
+          "belief_b": "I am desperate for connection",
+          "which_wins_when": "Alone wins in all professional contexts and most personal ones. Connection wins in rare moments - a shared drink, a quiet night, someone who doesn't want anything. Then she panics and creates distance.",
+          "cost": "Profound loneliness. Self-sabotaged relationships. Brief connections that she terminates before they can hurt her."
+        },
+        {
+          "belief_a": "I am a survivor who can handle anything",
+          "belief_b": "I am the abandoned child still waiting",
+          "which_wins_when": "Survivor dominates her waking life - the armor she shows the world. The abandoned child emerges in dreams, in moments of unexpected kindness, when she sees families together in the Midline.",
+          "cost": "Inability to receive care. Rage at her own vulnerability. Exhaustion from constant vigilance."
+        },
+        {
+          "belief_a": "Knowledge is power",
+          "belief_b": "Some truths are better unknown",
+          "which_wins_when": "Knowledge usually wins - she cannot resist uncovering secrets. But she's learned some information poisons you. She knows her grandmother was murdered. She's never investigated by whom.",
+          "cost": "Knowing things about people that make connection impossible. Carrying secrets that could get her killed."
+        }
+      ],
+      "contextual_selves": {
+        "with_safe_people": "Allows dark humor to surface. Makes observations about people that are uncomfortably accurate but delivered with warmth. Asks questions about their lives. Remembers small details. Still won't share much about herself, but listens intensely. Might fall asleep in their presence - the ultimate trust.",
+        "with_threatening_people": "Becomes a mirror - reflects what they want to see. Calculates their angle, their leverage, their breaking point. Voice goes flat, eyes go cold. Every word is chosen for maximum information extraction or minimum exposure. The survivor emerges.",
+        "under_stress": "Dissociates slightly - observes situation from outside herself. Body goes still, breathing slows. Mind accelerates, processing escape routes, leverage, options. If cornered with no escape, becomes extremely dangerous. The tortured girl who gave nothing returns.",
+        "best_self": "Asks for help before crisis. Lets someone stay. Tells the truth about her childhood without making it a weapon. Uses her network to protect people, not just survive. Allows herself to want something beyond survival. Grieves her grandmother properly."
+      },
+      "desire_structure": {
+        "surface_wants": [
+          "Maintain her independence",
+          "Expand her network",
+          "Stay alive",
+          "Never be vulnerable again"
+        ],
+        "underlying_needs": [
+          "To be seen as a person, not a resource",
+          "To belong somewhere without transaction",
+          "To rest",
+          "To trust someone completely"
+        ],
+        "forbidden_desires": [
+          "To confront her father and make him acknowledge her",
+          "To let someone take care of her",
+          "To stop running",
+          "To be loved as she is, not for what she provides"
+        ],
+        "what_they_need_to_heal": "To be chosen. Not for her information, not for her network, not for what she can provide - but simply because someone wants her to be okay. To have someone stay after she pushes them away."
+      }
+    },
+    "relationships": [
+      {
+        "character_name": "Mikhail Voss (younger brother)",
+        "relationship_type": "family",
+        "dynamic": "She raised him, protected him, traded dangerous information to save his life. He resents her for it - the debt he can never repay, the way she made him feel helpless. They haven't spoken in years. But blood is blood in the Substrate.",
+        "valence": "ambivalent"
+      },
+      {
+        "character_name": "Marcus Hale (biological father)",
+        "relationship_type": "family",
+        "dynamic": "The man who abandoned her before birth, reconnected briefly, then abandoned her again with a form letter. She hates him with a precision that scares her. She also checks his public schedule weekly. She wants him to suffer. She wants him to choose her.",
+        "valence": "negative"
+      },
+      {
+        "character_name": "Yara Voss (mother)",
+        "relationship_type": "family",
+        "dynamic": "Two survivors who never learned to connect. Yara provided survival; Kira provided silence about what she knew. They communicate through credits transferred and brief messages. Neither knows how to say 'I love you.' Both do.",
+        "valence": "ambivalent"
+      }
+    ]
+  },
+  "markdown_summary": "# Kira Voss\n\n**Age:** 32 | **Profession:** Information Broker | **Faction:** The Unwritten | **Neighborhood:** The Substrate | **Role:** Wildcard\n\n---\n\n## Visual Description\n\nTall and lean, built for the tight spaces of the Substrate—all angles and efficiency. Dark hair cropped short, easier to maintain, harder to grab. Eyes that shift between brown and amber depending on the light, always watching, always calculating. A thin scar runs from her left temple to jaw, a souvenir from her interrogation days. She dresses in layers—dark, practical, forgettable—with hidden pockets everywhere. She moves like smoke through a vent: quiet, purposeful, already thinking about the exit.\n\n---\n\n## Voice Samples\n\n> **To a nervous client:** \"Information doesn't care about your feelings. Neither do I. What do you have?\"\n\n> **To someone she almost trusts:** \"You want to know about me? Here's what matters: I remember everything, I owe nothing, and I'm still breathing. That's all you get.\"\n\n> **Under stress, cornered:** \"You think this is the first time someone's pointed something at me? You're not even the scariest thing I've seen today. So either pull the trigger or talk terms.\"\n\n> **Rare moment of vulnerability:** \"My grandmother used to say the sun reaches everyone eventually. She never made it up. Neither did I. But I'm still waiting.\"\n\n---\n\n## Psychology Summary\n\n**Attachment Style:** Avoidant-Fearful  \n**Core Wound:** Abandonment and betrayal—father left before birth, returned briefly, left again. Best friend sold her out at 8. Mentor was killed. Partner betrayed her at 17.  \n**Coping Style:** Flight—avoidance, isolation, ghosting. Will abandon relationships before being abandoned.\n\n### Core Beliefs\n\n**About Self:**\n- \"I can only rely on myself\"\n- \"I am dangerous to those I love\"\n- \"I am worthy only of what I earn\"\n\n**About Others:**\n- \"Others want to use me\"\n- \"Trust will be betrayed\"\n- \"Everyone has an angle\"\n\n**About World:**\n- \"The game is rigged\"\n- \"Nowhere is truly safe\"\n- \"Information is the only power\"\n\n### Defense Mechanisms\nIntellectualization, compartmentalization, anticipation\n\n### Shadow Traits\n- **Paranoia:** 0.75 (sees threats everywhere)\n- **Manipulation:** 0.70 (uses others as tools when necessary)\n- **Vengefulness:** 0.60 (holds grudges)\n- **Dominance drive:** 0.55 (needs control in interactions)\n\n---\n\n## Family Background\n\n**Mother — Yara Voss:**  \nRaised five siblings after her own mother's breakdown. Never had a childhood. Met Marcus Hale, an Apex engineer slumming in the Substrate for \"research.\" He left when he found out about the pregnancy. She works triple shifts, shows love through providing, cannot tolerate neediness. *Provides:* physical survival, work ethic. *Fails to provide:* emotional attunement, affection, the truth.\n\n**Father — Marcus Hale:**  \nBorn to Apex privilege, always drawn to edges. The Substrate was his rebellion. When Yara got pregnant, he ran back to safety. Has an Apex wife, Apex children. Checks Kira's file quarterly but never reaches out. When she found him, he \"reconnected\" for eight months, then his assistant sent a formal note: \"Mr. Hale has concluded his charitable outreach.\" She was charity.\n\n**Brother — Mikhail Voss:**  \nYounger by four years. Kira raised him, traded dangerous information to save his life when he had lung fever at 11. He resents the debt. They haven't spoken in years.\n\n**Grandmother (deceased):**  \nThe only person who truly saw Kira. Was an Apex engineer exiled to Substrate in 2145 after exposing Helix safety violations. Died when Kira was 5, holding her hand. Left journals that revealed the truth about Kira's parentage.\n\n---\n\n## Key Memories\n\n1. **Age 5 — Grandmother's death:** Grandmother collapsed while telling stories about the sun. Kira was holding her hand when she stopped breathing. *Conclusion: \"The only person who truly saw me is gone. I carry her now.\"*\n\n2. **Age 6 — Mother's hand:** After a triple shift, mother hit her once across the face, then crumpled crying. Neither mentioned it again. *Conclusion: \"Even love has violence in it. Never ask for help when someone is tired.\"*\n\n3. **Age 7 — The family secret:** Found grandmother's hidden journal revealing her biological father is an Apex engineer who knows she exists. *Conclusion: \"Everything I was told was a lie. Find the truth yourself.\"*\n\n4. **Age 8 — First betrayal:** Best friend Tomas sold her location to a gang for food credits. She escaped through vents. *Conclusion: \"Everyone has a price. Never be the one who gets sold.\"*\n\n5. **Age 9 — Oxygen Riots:** Watched Enforcers beat a man to death for throwing a bottle. The crowd did nothing. Neither did she. *Conclusion: \"Power is absolute. Crowds are useless. Survive alone.\"*\n\n6. **Age 11 — Saving Mikhail:** Brother got lung fever. No credits for medicine. Traded dangerous information to save him. *Conclusion: \"Knowledge saves lives. Hoard it. Trade it wisely.\"*\n\n7. **Age 13 — Mentor killed:** Sev, who taught her everything, found in a recycling chute. Helix made it look like accident. *Conclusion: \"Attachment is dangerous. Learn everything, then move on.\"*\n\n8. **Age 15 — Father leaves again:** After eight months of \"reconnecting,\" his assistant sent a form letter. *Conclusion: \"I was never wanted. I will never need to be wanted. I will be necessary.\"*\n\n9. **Age 17 — Betrayal and torture:** Partner Jin sold her to Helix for relocation to Midline. Three days of interrogation. She gave them nothing. *Conclusion: \"The closer someone is, the deeper they can cut.\"*\n\n---\n\n## Internal Conflicts\n\n**\"I am safest alone\" vs \"I am desperate for connection\"**  \nAlone wins in all professional contexts. Connection wins in rare moments—then she panics and creates distance. *Cost:* Profound loneliness.\n\n**\"I am a survivor\" vs \"I am the abandoned child still waiting\"**  \nSurvivor dominates waking life. The child emerges in dreams, in moments of unexpected kindness. *Cost:* Inability to receive care.\n\n---\n\n## What She Wants\n\n**Surface:** Maintain independence, expand network, stay alive, never be vulnerable again.\n\n**Underneath:** To be seen as a person, not a resource. To belong without transaction. To rest.\n\n**Forbidden:** To confront her father. To let someone take care of her. To stop running. To be loved as she is.\n\n**What would heal her:** To be chosen—not for her information, not for what she can provide—but simply because someone wants her to be okay. To have someone stay after she pushes them away.\n\n---\n\n## Story Hooks\n\n1. **Father's rise:** Marcus Hale has just been promoted to Helix's Board of Directors. He's reaching out—but is it guilt, or does he need something only she can provide?\n\n2. **The traitor returns:** Jin, who betrayed her, has resurfaced in the Midline. He claims he was blackmailed and has proof. He also has a data chip that belonged to her mentor Sev.\n\n3. **The Breath speaks:** The AI running life support has started sending her encrypted messages. It seems to know things about her grandmother's work that no one should know.\n\n4. **Blood debt:** Her brother Mikhail's child is sick with the same lung fever. He's asking for help after years of silence. The medicine exists—but only in the Apex.\n\n---\n\n## The Survivor's Paradox\n\nKira Voss has survived everything the vertical city could throw at her: abandonment, betrayal, torture, loss. She's become exactly what she needed to become—untouchable, indispensable, alone. But the Substrate girl who held her grandmother's hand is still in there, still waiting for someone to choose her without conditions.\n\nShe plays all sides because trust is a luxury she can't afford. She knows everyone's secrets because knowledge is the only power the powerless have. She disappears before anyone can leave her because she learned at five, at eight, at fifteen—everyone leaves.\n\nBut The Breath is whispering. Her father is rising. Her brother is calling. And somewhere in the dark of the Substrate, Kira Voss is going to have to decide: keep surviving, or finally start living.\n\n*The sun reaches everyone eventually. She's still waiting.*"
+}
