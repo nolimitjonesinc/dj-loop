@@ -129,14 +129,23 @@ pnpm build            # Build all packages
 pnpm deploy           # Deploy dashboard to Vercel
 ```
 
-## Current Status
+## Task Tracking
 
-Phase 1: Foundation
-- [ ] Supabase schema
-- [ ] Dashboard shell with queue visualization
-- [ ] Bird CLI integration
-- [ ] Basic capture flow
-- [ ] Approval notifications
+**Tasks are tracked in the `tasks/` directory** — one file per section.
+Each file has markdown checklists (`- [x]` done, `- [ ]` undone).
+HQ (hq.nolimitjones.com) reads these files automatically.
+
+**After completing ANY task:**
+1. Open the relevant `tasks/*.md` file
+2. Change the task from `- [ ]` to `- [x]`
+3. Commit the task file update in the SAME commit as your code changes
+
+**Parallel Session Safety:**
+- Each task file covers a different area of work
+- Only edit the task file relevant to YOUR current work
+- Do NOT edit other task files you aren't working on
+
+**Reference:** `PRD_SDK_BUILD_ENGINE.md` and `DJ_LOOP_V2_PLAN.md` for full context.
 
 ## Context From DJ
 
