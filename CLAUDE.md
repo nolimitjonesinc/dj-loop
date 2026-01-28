@@ -135,13 +135,24 @@ pnpm deploy           # Deploy dashboard to Vercel
 Each file has markdown checklists (`- [x]` done, `- [ ]` undone).
 HQ (hq.nolimitjones.com) reads these files automatically.
 
-**After completing ANY task:**
+**Before starting work:** Read the `tasks/` directory. Find the file matching your work area.
+
+**When you COMPLETE a task:**
 1. Open the relevant `tasks/*.md` file
-2. Change the task from `- [ ]` to `- [x]`
+2. Change the item from `- [ ]` to `- [x]`
 3. Commit the task file update in the SAME commit as your code changes
 
+**When you DISCOVER new work** (bugs, missing features, improvements):
+1. Add a `- [ ]` item to the most relevant task file
+2. If nothing fits, create `tasks/XX-name.md` with the next available number
+3. Commit it with your code
+
+**When a task needs to CHANGE** (wrong, outdated, needs splitting):
+1. Don't delete — mark `- [x] (REMOVED — reason)` or `- [x] (SPLIT — see below)`
+2. Add corrected tasks as new `- [ ]` items
+3. Nothing should vanish without a trace
+
 **Parallel Session Safety:**
-- Each task file covers a different area of work
 - Only edit the task file relevant to YOUR current work
 - Do NOT edit other task files you aren't working on
 
