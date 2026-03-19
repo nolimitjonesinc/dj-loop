@@ -9,6 +9,8 @@ import { PendingApprovals } from '@/components/pending-approvals'
 import { BuildQueue } from '@/components/build-queue'
 import { ActiveBuilds } from '@/components/active-builds'
 import { RecentShips } from '@/components/recent-ships'
+import { ScaffoldModal } from '@/components/scaffold-modal'
+import type { ScaffoldTask } from '@/lib/agents/scaffold'
 
 // Shows prominent red alert for recent failures (last hour)
 function FailedBuildAlert({ builds, onDismiss }: { builds: Build[]; onDismiss: (id: string) => void }) {
@@ -61,6 +63,14 @@ export default function Dashboard() {
   const [error, setError] = useState<string | null>(null)
   const [queueStatus, setQueueStatus] = useState<'idle' | 'processing' | 'waiting'>('idle')
 
+  // Scaffold state
+  const [scaffoldModalOpen, setScaffoldModalOpen] = useState(false)
+  const [scaffoldIdea, setScaffoldIdea] = useState<Idea | null>(null)
+  const [scaffoldResult, setScaffoldResult] = useState<{ claudeMd: string; tasks: ScaffoldTask[]; repoStructure?: string[]; stackReasoning?: string } | null>(null)
+  const [scaffoldLoading, setScaffoldLoading] = useState(false)
+  const [scaffoldError, setScaffoldError] = useState<string | null>(null)
+  const [scaffoldBuildId, setScaffoldBuildId] = useState<string | null>(null)
+
   const supabase = useMemo(() => {
     try {
       return getSupabase()
@@ -103,6 +113,52 @@ export default function Dashboard() {
       setLoading(false)
     }
   }, [supabase])
+
+  const handleScaffold = useCallback(async (idea: Idea) => {
+    setScaffoldIdea(idea)
+    setScaffoldModalOpen(true)
+    setScaffoldLoading(true)
+    setScaffoldResult(null)
+    setScaffoldError(null)
+    setScaffoldBuildId(null)
+
+    try {
+      const res = await fetch('/api/scaffold', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ideaId: idea.id }),
+      })
+      const data = await res.json()
+      if (!res.ok) throw new Error(data.error || 'Scaffold failed')
+      setScaffoldResult({
+        claudeMd: data.claudeMd,
+        tasks: data.tasks,
+        repoStructure: data.repoStructure,
+        stackReasoning: data.stackReasoning,
+      })
+      setScaffoldBuildId(data.build?.id || null)
+      fetchData()
+    } catch (err) {
+      setScaffoldError(err instanceof Error ? err.message : 'Scaffold failed')
+    } finally {
+      setScaffoldLoading(false)
+    }
+  }, [fetchData])
+
+  const handleScaffoldBuild = useCallback(async () => {
+    if (!scaffoldIdea) return
+    setScaffoldModalOpen(false)
+    try {
+      await fetch('/api/start-build', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ideaId: scaffoldIdea.id, buildId: scaffoldBuildId }),
+      })
+      fetchData()
+    } catch (err) {
+      console.error('Failed to start build:', err)
+    }
+  }, [scaffoldIdea, scaffoldBuildId, fetchData])
 
   const clearBuildHistory = useCallback(async () => {
     if (!supabase) return
@@ -252,7 +308,7 @@ export default function Dashboard() {
           <div className="space-y-6">
             <IdeaInput onIdeaCreated={fetchData} />
             <DraftIdeas ideas={ideas} onUpdate={fetchData} />
-            <PendingApprovals ideas={ideas} onUpdate={fetchData} />
+            <PendingApprovals ideas={ideas} onUpdate={fetchData} onScaffold={handleScaffold} />
           </div>
 
           <div className="space-y-6">
@@ -263,6 +319,16 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
+
+      <ScaffoldModal
+        isOpen={scaffoldModalOpen}
+        ideaTitle={scaffoldIdea?.title || ''}
+        result={scaffoldResult}
+        isLoading={scaffoldLoading}
+        error={scaffoldError}
+        onClose={() => setScaffoldModalOpen(false)}
+        onStartBuild={handleScaffoldBuild}
+      />
     </div>
   )
 }

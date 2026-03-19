@@ -26,9 +26,10 @@ function Spinner() {
 interface PendingApprovalsProps {
   ideas: Idea[]
   onUpdate?: () => void
+  onScaffold?: (idea: Idea) => void
 }
 
-export function PendingApprovals({ ideas, onUpdate }: PendingApprovalsProps) {
+export function PendingApprovals({ ideas, onUpdate, onScaffold }: PendingApprovalsProps) {
   const pendingIdeas = ideas.filter((i) => i.status === 'pending_approval')
 
   if (pendingIdeas.length === 0) {
@@ -53,14 +54,14 @@ export function PendingApprovals({ ideas, onUpdate }: PendingApprovalsProps) {
       </CardHeader>
       <CardContent className="space-y-3">
         {pendingIdeas.map((idea) => (
-          <IdeaApprovalCard key={idea.id} idea={idea} onUpdate={onUpdate} />
+          <IdeaApprovalCard key={idea.id} idea={idea} onUpdate={onUpdate} onScaffold={onScaffold} />
         ))}
       </CardContent>
     </Card>
   )
 }
 
-function IdeaApprovalCard({ idea, onUpdate }: { idea: Idea; onUpdate?: () => void }) {
+function IdeaApprovalCard({ idea, onUpdate, onScaffold }: { idea: Idea; onUpdate?: () => void; onScaffold?: (idea: Idea) => void }) {
   const [loading, setLoading] = useState<string | null>(null)
 
   const supabase = useMemo(() => {
@@ -71,34 +72,22 @@ function IdeaApprovalCard({ idea, onUpdate }: { idea: Idea; onUpdate?: () => voi
     }
   }, [])
 
-  const handleAction = async (action: 'approve' | 'reject') => {
+  const handleAction = async (action: 'reject' | 'scaffold') => {
     if (!supabase) return
     setLoading(action)
     try {
-      const newStatus = action === 'approve' ? 'approved' : 'rejected'
+      if (action === 'scaffold') {
+        // Approve & scaffold — generates CLAUDE.md + tasks before building
+        onScaffold?.(idea)
+        return
+      }
+
       const { error } = await supabase
         .from('dj_ideas')
-        .update({
-          status: newStatus,
-          prd_approved: action === 'approve'
-        })
+        .update({ status: 'rejected' })
         .eq('id', idea.id)
 
       if (error) throw error
-
-      // Auto-start build when approved
-      if (action === 'approve') {
-        try {
-          await fetch('/api/start-build', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ ideaId: idea.id }),
-          })
-        } catch (buildErr) {
-          console.error('Failed to start build:', buildErr)
-          // Don't fail the approval if build start fails
-        }
-      }
 
       onUpdate?.()
     } catch (err) {
@@ -107,6 +96,22 @@ function IdeaApprovalCard({ idea, onUpdate }: { idea: Idea; onUpdate?: () => voi
       setLoading(null)
     }
   }
+
+  const quickVerdict = (idea.source_metadata as Record<string, unknown>)?.quickVerdict as string | undefined
+
+  const scoreColor = idea.score >= 7
+    ? 'bg-green-900/50 text-green-400 border-green-700'
+    : idea.score >= 4
+      ? 'bg-yellow-900/50 text-yellow-400 border-yellow-700'
+      : 'bg-red-900/50 text-red-400 border-red-700'
+
+  const verdictColor = quickVerdict === 'GO'
+    ? 'text-green-400'
+    : quickVerdict === 'MAYBE'
+      ? 'text-yellow-400'
+      : quickVerdict === 'STOP'
+        ? 'text-red-400'
+        : 'text-zinc-400'
 
   return (
     <div className="p-3 bg-zinc-800 rounded-lg border border-zinc-700">
@@ -117,6 +122,16 @@ function IdeaApprovalCard({ idea, onUpdate }: { idea: Idea; onUpdate?: () => voi
             <Badge variant="outline" className="text-xs shrink-0">
               {idea.project_dna}
             </Badge>
+            {idea.score > 0 && (
+              <span className={`text-xs font-bold px-1.5 py-0.5 rounded border ${scoreColor}`}>
+                {idea.score}
+              </span>
+            )}
+            {quickVerdict && (
+              <span className={`text-xs font-bold ${verdictColor}`}>
+                {quickVerdict}
+              </span>
+            )}
           </div>
           <p className="text-sm text-zinc-400 line-clamp-2">{idea.raw_input}</p>
         </div>
@@ -147,16 +162,16 @@ function IdeaApprovalCard({ idea, onUpdate }: { idea: Idea; onUpdate?: () => voi
       <div className="flex gap-2 mt-3">
         <Button
           size="sm"
-          onClick={() => handleAction('approve')}
+          onClick={() => handleAction('scaffold')}
           disabled={loading !== null || !supabase}
-          className="bg-green-600 hover:bg-green-700 text-white min-w-[140px]"
+          className="bg-blue-600 hover:bg-blue-700 text-white min-w-[140px]"
         >
-          {loading === 'approve' ? (
+          {loading === 'scaffold' ? (
             <span className="flex items-center gap-2">
               <Spinner />
-              Starting build...
+              Scaffolding...
             </span>
-          ) : 'Approve & Build'}
+          ) : 'Approve & Scaffold'}
         </Button>
         <Button
           size="sm"

@@ -37,7 +37,7 @@ export type InputType = 'manual' | 'tweet' | 'bug' | 'feature' | 'voice'
 
 export type ProjectDNA = 'chrome-extension' | 'adhd-game' | 'utility-app' | 'api' | 'script' | 'world-builder'
 
-export type BuildStatus = 'queued' | 'running' | 'paused' | 'completed' | 'failed'
+export type BuildStatus = 'queued' | 'scaffolded' | 'running' | 'paused' | 'completed' | 'failed'
 
 export interface Idea {
   id: string
@@ -104,6 +104,8 @@ export interface Build {
   title?: string
   project_dna?: ProjectDNA
   build_report?: BuildReport | null
+  claude_md?: string | null
+  scaffold_tasks?: unknown[] | null
 }
 
 export interface QueueStats {

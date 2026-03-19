@@ -46,17 +46,17 @@ export function IdeaInput({ onIdeaCreated }: IdeaInputProps) {
 
       if (error) throw error
 
-      // Step 2: Immediately generate PRD
-      setStatus('Generating PRD...')
+      // Step 2: Send through Genesis Engine analysis
+      setStatus('Analyzing idea...')
 
-      const response = await fetch('/api/generate-prd', {
+      const response = await fetch('/api/analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ideaId: data.id }),
       })
 
       if (!response.ok) {
-        throw new Error('Failed to generate PRD')
+        throw new Error('Failed to analyze idea')
       }
 
       setInput('')

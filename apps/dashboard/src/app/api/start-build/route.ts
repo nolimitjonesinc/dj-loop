@@ -345,7 +345,7 @@ async function saveBuildReport(
 const CLI_PATHS = {
   gh: '/opt/homebrew/bin/gh',
   vercel: '/Users/dannyjonesphotography/.npm-global/bin/vercel',
-  claude: '/Users/dannyjonesphotography/.claude/local/claude',
+  claude: '/Users/dannyjonesphotography/.npm-global/bin/claude',
 }
 
 // Helper to run Claude CLI - uses JSON output format for reliable programmatic use
@@ -415,6 +415,7 @@ interface BuildConfig {
   title: string
   prd: string
   projectDna: string
+  scaffoldClaudeMd?: string | null
 }
 
 function generateRepoName(title: string): string {
@@ -1090,7 +1091,8 @@ async function runBuildProcess(
     // Write PRD and CLAUDE.md
     await writeFile(join(projectDir, 'PRD.md'), config.prd)
 
-    const claudeInstructions = `# ${config.title}
+    // Use scaffold CLAUDE.md if available (much better build instructions)
+    const claudeInstructions = config.scaffoldClaudeMd || `# ${config.title}
 
 ## Project Type
 ${config.projectDna}
@@ -1408,6 +1410,8 @@ export async function POST(request: Request) {
     const body = await request.json()
 
     // Two modes: specific ideaId or pick next approved
+    // Optional: buildId from scaffold (has pre-generated CLAUDE.md)
+    const scaffoldBuildId = body.buildId || null
     let ideaId = body.ideaId
 
     if (!ideaId) {
@@ -1454,8 +1458,21 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Build already running for this idea' }, { status: 409 })
     }
 
+    // If no PRD exists, check if scaffold generated a CLAUDE.md to use instead
     if (!idea.prd) {
-      return NextResponse.json({ error: 'Idea has no PRD' }, { status: 400 })
+      const { data: scaffoldBuild } = await supabase
+        .from('dj_builds')
+        .select('claude_md')
+        .eq('idea_id', ideaId)
+        .not('claude_md', 'is', null)
+        .limit(1)
+        .single()
+
+      if (scaffoldBuild?.claude_md) {
+        idea.prd = scaffoldBuild.claude_md
+      } else {
+        return NextResponse.json({ error: 'Idea has no PRD and no scaffold output' }, { status: 400 })
+      }
     }
 
     // Update idea status to building
@@ -1464,37 +1481,68 @@ export async function POST(request: Request) {
       .update({ status: 'building' })
       .eq('id', ideaId)
 
-    // Create build record
-    const { data: build, error: buildError } = await supabase
-      .from('dj_builds')
-      .insert({
-        idea_id: ideaId,
-        status: 'running',
-        progress: 0,
-        current_phase: 'Starting...',
-        started_at: new Date().toISOString(),
-        logs: [],
-      })
-      .select('id')
-      .single()
+    // If we have a scaffold build ID, use that record (it has the CLAUDE.md)
+    let buildId: string
+    let scaffoldClaudeMd: string | null = null
 
-    if (buildError || !build) {
-      throw new Error('Failed to create build record')
+    if (scaffoldBuildId) {
+      // Update existing scaffold build record to running
+      const { data: existingBuild } = await supabase
+        .from('dj_builds')
+        .select('id, claude_md')
+        .eq('id', scaffoldBuildId)
+        .single()
+
+      if (existingBuild) {
+        buildId = existingBuild.id
+        scaffoldClaudeMd = existingBuild.claude_md || null
+        await supabase
+          .from('dj_builds')
+          .update({
+            status: 'running',
+            progress: 0,
+            current_phase: 'Starting...',
+            started_at: new Date().toISOString(),
+          })
+          .eq('id', buildId)
+      } else {
+        throw new Error('Scaffold build record not found')
+      }
+    } else {
+      // Create new build record
+      const { data: build, error: buildError } = await supabase
+        .from('dj_builds')
+        .insert({
+          idea_id: ideaId,
+          status: 'running',
+          progress: 0,
+          current_phase: 'Starting...',
+          started_at: new Date().toISOString(),
+          logs: [],
+        })
+        .select('id')
+        .single()
+
+      if (buildError || !build) {
+        throw new Error('Failed to create build record')
+      }
+      buildId = build.id
     }
 
     // Start build process in background (don't await)
-    runBuildProcess(supabase, build.id, {
+    runBuildProcess(supabase, buildId, {
       ideaId: idea.id,
       title: idea.title,
       prd: idea.prd,
       projectDna: idea.project_dna,
+      scaffoldClaudeMd,
     }).catch((err) => {
       console.error('Background build error:', err)
     })
 
     return NextResponse.json({
       success: true,
-      buildId: build.id,
+      buildId,
       message: 'Build started',
     })
 
