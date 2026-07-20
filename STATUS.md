@@ -1,5 +1,5 @@
 # DJ Loop — Status
-_Auto-updated by Status Brain on every push. Last change: Added Status Brain workflow to auto-generate this file on each push._
+_Auto-updated by Status Brain on every push. Last change: Added Status Brain workflow and script to auto-generate this file on each push._
 
 **Status:** In progress  
 **What it is:** An autonomous idea-to-product pipeline that turns rough ideas into approved PRDs, then builds and deploys them automatically.  
@@ -16,9 +16,11 @@ _Auto-updated by Status Brain on every push. Last change: Added Status Brain wor
 - World Builder package generates characters with 8-layer psychology system
 - World Builder MCP server exposes world-building tools to Claude
 - Dark mode, responsive UI with real-time updates
+- API endpoints for analyze, scaffold, ingest, and world build flows
+- Status Brain workflow auto-generates this file on every push
 
 ## Recent changes (newest first)
-- 2026-07-20 — Added Status Brain workflow and script to auto-generate status updates
+- 2026-07-20 — Added Status Brain workflow and script to auto-generate this file on each push
 - 2026-03-19 — Connected pipeline with Genesis analysis, scaffold, and ingest bridge
 - 2026-01-27 — Added full task lifecycle rules and task tracking via tasks/ directory
 - 2026-01-27 — Organized task files migrated from PRD
